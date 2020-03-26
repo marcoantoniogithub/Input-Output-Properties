@@ -1,0 +1,7 @@
+<h2>Compras</h2>
+<h4>Numero de itens no carrinho: {{contador}}</h4>
+<div style="display:flex; flex-direction: row; align-content:space-between" *ngFor="let produto of produtos">
+  <div style="margin:10px">{{produto.id}}</div>
+  <div style="margin:10px">{{produto.nome}}</div>
+  <button style="margin:10px" (click)="acao(produto)">add</button>
+</div>
